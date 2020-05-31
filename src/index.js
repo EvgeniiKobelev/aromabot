@@ -9,14 +9,7 @@ const token = '1201172454:AAFwJtyBvtEOllcux1MZF55XYZgU9fP-7Ak'
 helpers.logStart()
 
 const bot = new Telegrambot(token, {
-    polling: true,
-    request: {
-        agentClass: Agent,
-        agentOptions: {
-            socksHost: '127.0.0.1',
-            socksPort: '9150'
-        }
-    }
+    polling: true
 });
 
 bot.on('message', (msg) => {
